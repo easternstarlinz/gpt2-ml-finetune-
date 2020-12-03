@@ -13,7 +13,7 @@ import collections
 import os
 import sys
 from tempfile import TemporaryDirectory
-sys.path.append('/data/home/share1/gpt2-ml-Finetune')
+sys.path.append('/content/gpt2-ml-Finetune-')
 from tokenization import tokenization
 
 parser = argparse.ArgumentParser(description='SCRAPE!')
@@ -66,7 +66,7 @@ args = parser.parse_args()
 random.seed(args.seed + args.fold)
 
 tokenizer = tokenization.FullTokenizer(
-    vocab_file="/data/home/share1/gpt2-ml/dataset/bert-base-chinese-vocab.txt", do_lower_case=True)
+    vocab_file="/content/gpt2-ml-Finetune-/tokenization/bert-base-chinese-vocab.txt", do_lower_case=True)
 
 class S3TFRecordWriter(object):
     def __init__(self, fn):
