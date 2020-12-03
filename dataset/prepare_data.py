@@ -13,7 +13,7 @@ import collections
 import os
 import sys
 from tempfile import TemporaryDirectory
-sys.path.append('/content/gpt2-ml-Finetune-')
+sys.path.append('/content/gpt2-ml-finetune-')
 from tokenization import tokenization
 
 parser = argparse.ArgumentParser(description='SCRAPE!')
