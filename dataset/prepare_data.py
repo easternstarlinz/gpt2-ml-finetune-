@@ -66,7 +66,7 @@ args = parser.parse_args()
 random.seed(args.seed + args.fold)
 
 tokenizer = tokenization.FullTokenizer(
-    vocab_file="/content/gpt2-ml-Finetune-/tokenization/bert-base-chinese-vocab.txt", do_lower_case=True)
+    vocab_file="/content/gpt2-ml-finetune-/tokenization/bert-base-chinese-vocab.txt", do_lower_case=True)
 
 class S3TFRecordWriter(object):
     def __init__(self, fn):
