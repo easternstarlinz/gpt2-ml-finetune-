@@ -20,10 +20,9 @@ import sys
 import os
 sys.path.append('/data/home/share1/gpt2-ml')
 
-#from train.dataloader import input_fn_builder
-#from train.modeling import model_fn_builder, GroverConfig
-from dataloader import input_fn_builder
-from modeling import model_fn_builder, GroverConfig
+from train.dataloader import input_fn_builder
+from train.modeling import model_fn_builder, GroverConfig
+
 
 flags = tf.flags
 
