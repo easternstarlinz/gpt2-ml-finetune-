@@ -30,7 +30,7 @@ FLAGS = flags.FLAGS
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'
 ## Required parameters
 flags.DEFINE_string(
-    "config_file", 'configs/mega.json',
+    "config_file", 'configs/base.json',
     "The config json file corresponding to the pre-trained news model. "
     "This specifies the model architecture.")
 
