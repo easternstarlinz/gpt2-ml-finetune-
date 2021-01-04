@@ -41,7 +41,7 @@ parser.add_argument(
 parser.add_argument(
     '-base_fn',
     dest='base_fn',
-    default='mayun_',
+    default='zhanglin_',
     type=str,
     help='We will output files that are like {base_fn}_{n}.tfrecord for n in 0, ..., 1023'
 )
@@ -56,7 +56,7 @@ parser.add_argument(
 parser.add_argument(
     '-max_seq_length',
     dest='max_seq_length',
-    default=1024,
+    default=2048,
     type=int,
     help='Max sequence length',
 )
