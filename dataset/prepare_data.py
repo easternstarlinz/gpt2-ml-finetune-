@@ -56,7 +56,7 @@ parser.add_argument(
 parser.add_argument(
     '-max_seq_length',
     dest='max_seq_length',
-    default=2048,
+    default=1024,
     type=int,
     help='Max sequence length',
 )
